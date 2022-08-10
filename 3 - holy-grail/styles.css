@@ -4,7 +4,67 @@ body {
   margin: 0;
   font-family: "Poppins";
 }
-ul, li {
+
+ul,
+li {
   padding: 0;
   list-style-type: none;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+  border-bottom: 3px solid #000;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px;
+  justify-content: center;
+}
+
+.categories {
+  grid-column: 1 / 2;
+  margin: .7rem;
+  border-right: 3px solid #000;
+  text-align: center;
+  color: rgb(54, 54, 54);
+
+}
+
+.content {
+  grid-column: 2 / 6;
+  display: grid;
+  gap: 20px;
+  width: 100%;
+}
+
+.content>* {
+  text-align: center;
+  margin: auto;
+  padding: .7rem;
+}
+
+.content p {
+  word-spacing: 2px;
+  line-height: 2rem;  /* !!!!!!!! */
+  color: rgb(54, 54, 54);
+}
+.content img {
+  width: 100%; /* !!!!!!!! */
+}
+
+.information {
+  grid-column: 6 / -1;
+  margin: .7rem;
+  padding: 0 .7rem;
+  border-left: 3px solid #000;
+  color: rgb(54, 54, 54);
+
+}
+
+footer {
+  text-align: center;
+  border-top: 3px solid #000;
 }
