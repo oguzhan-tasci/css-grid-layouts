@@ -5,3 +5,37 @@ body {
   font-family: "Poppins";
   background: #f7f7f7;
 }
+nav {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: auto;
+}
+nav > * {
+  justify-self: center;
+  align-self: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.content > * {
+  background-color: white;
+  margin: 1rem;
+  padding: 1.2rem;
+  border-radius: 16px;
+}
+.tall {
+  align-self: start;
+}
